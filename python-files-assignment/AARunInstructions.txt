@@ -1,0 +1,11 @@
+1. Enter the Path for the readfile e.g. path of  Numbers.Txt
+2. Enter the path for the Logfile  
+---- Kindly note both file can be at the same directory path or in different paths too.
+     In case , you dont enter the Logile path program assumes it in the same directory path where readFile exist
+3. Enter the Read File name
+4. Enter the Log File name
+---- Kindly note in case you dont enter the full name of file with extension e.g. Number.Txt , Program
+     appends automatically the .txt and assumes the read file as the text file only.
+ 
+     If you dont enter the Logifile name , program creates the log file with the same name of Read file with
+     ".log" extension.
