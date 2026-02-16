@@ -1,18 +1,23 @@
 DataBase =[]
 
 def getUserInput():
-    inputName = input("Enter UserName :").strip()
+    while True:
+        inputName = input("Enter UserName :").strip()
+        if inputName== "":
+            print(">>You can not leave UserName Blank. Re-enter please")
+        else:
+            break
     inputMarks =[]
     marksString = input("Enter Marks separated by pipe sign :").split("|")
     for mark in marksString:
         try:
             floatmark = float(mark.strip())
             if (floatmark > 100):
-                print(f"Invalid mark  for the user {inputName}, Cant exceed more than 100. placing 0 for this subject ")
+                print(f">>Invalid mark  for the user {inputName}, Cant exceed more than 100. placing 0 for this subject ")
                 floatmark = 0
             inputMarks.append(floatmark) 
         except ValueError:
-            print(f"Marks list is invalid for userName {inputName}")
+            print(f">>Marks list is invalid for userName {inputName}")
             inputMarks =[]
   
     inputRoles = {role.strip().lower()  for role in input("Enter roles separated by ';' sign : ").split(";")}
@@ -42,7 +47,7 @@ def hasAdminAccess(roles):
 
 def main():
     while True:
-        ch = input("Press q or Q to stop and any other key to continue : ").lower()
+        ch = input("Press q or Q to stop or any other key to continue : ").lower()
         if (ch == "q"):
             break
         else:
