@@ -1,0 +1,12 @@
+{
+    "id": "req_123",
+    "status": "success",
+    "result": {
+        "temt": "Hello world",
+        "confidence": 0.88,
+        "Flat": 22,
+        "BAT": "65656"
+    },
+    "USA": true,
+    "IRAN": false
+}
