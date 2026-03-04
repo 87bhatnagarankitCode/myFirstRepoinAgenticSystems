@@ -1,0 +1,9 @@
+StudentID,Name,Stream,Age,Score,Grade,PassedCutoff,Labels
+101,Alice,BIO,21,80,A,False,A
+102,Bob,MATHs,22,93,A++,True,B
+103,Charlie,BIO,21,64,B,False,C
+104,David,BIO,20,98,A++,True,D
+105,Eva,MATHs,23,46,C,False,E
+106,Frank,MATHs,22,93,A++,True,F
+107,Grace,MATHs,24,72,B++,True,G
+108,Hannah,MATHs,21,83,A,False,H
