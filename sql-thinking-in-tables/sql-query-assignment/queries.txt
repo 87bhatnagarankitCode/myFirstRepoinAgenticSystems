@@ -1,0 +1,45 @@
+--TABLE
+CREATE TABLE Students ( id INTEGER PRIMARY KEY AUTOINCREMENT,
+						name TEXT NOT NULL,
+						score INTEGER,
+						passed BOOLEAN,
+						class INTEGER);
+
+--Insertion
+INSERT INTO Students (name,score,passed,class) VALUES ('Aarav',92,TRUE,10 );
+INSERT INTO Students (name,score,passed,class) VALUES ('Diya',76,TRUE,10  );
+INSERT INTO Students (name,score,passed,class) VALUES ('Rohan',65,FALSE,9 );
+INSERT INTO Students (name,score,passed,class) VALUES ('Meera',88,TRUE,10 );
+INSERT INTO Students (name,score,passed,class) VALUES ('Kabir',54,FALSE,9 );
+INSERT INTO Students (name,score,passed,class) VALUES ('Ananya',95,TRUE,10);
+INSERT INTO Students (name,score,passed,class) VALUES ('Rahul',81,TRUE,9  );
+INSERT INTO Students (name,score,passed,class) VALUES ('Sneha',73,TRUE,9  );
+INSERT INTO Students (name,score,passed,class) VALUES ('Arjun',	84,	TRUE,10);
+INSERT INTO Students (name,score,passed,class) VALUES ('Kavya',	69,	FALSE,9);
+
+
+--Selection
+
+SELECT * FROM STUDENTS;
+
+
+SELECT NAME,SCORE FROM STUDENTS;
+
+SELECT * FROM STUDENTS WHERE SCORE > 80;
+
+SELECT * FROM STUDENTS WHERE SCORE > 80 AND PASSED;
+
+SELECT * FROM STUDENTS WHERE SCORE > 85 OR CLASS = 9;
+
+SELECT * FROM STUDENTS WHERE NOT PASSED;
+
+SELECT DISTINCT CLASS FROM STUDENTS;
+
+SELECT * FROM STUDENTS ORDER BY SCORE DESC LIMIT 5;
+
+SELECT * FROM STUDENTS ORDER BY CLASS ASC, SCORE DESC ;
+
+SELECT NAME , SCORE AS FINAL_SCORE FROM STUDENTS;
+
+SELECT NAME , SCORE AS FINAL_SCORE FROM STUDENTS WHERE SCORE > 75 ORDER BY SCORE DESC LIMIT 3;
+
