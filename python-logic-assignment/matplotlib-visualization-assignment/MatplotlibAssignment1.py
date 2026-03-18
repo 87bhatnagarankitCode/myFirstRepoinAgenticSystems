@@ -60,6 +60,6 @@ for i in range(len(listaccuracy)):
 plt.xlabel("Models")
 plt.ylabel("Accuracy")
 plt.title("Model Accuracy chart")
-plt.legend()
+#plt.legend()
 plt.grid(True)
 plt.show()
